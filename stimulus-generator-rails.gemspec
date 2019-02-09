@@ -11,5 +11,5 @@ Gem::Specification.new do |s|
   s.add_dependency 'activesupport'
   s.add_dependency 'webpacker'
 
-  s.files    = Dir['lib/**/*.rb']
+  s.files    = Dir['lib/**/*']
 end
