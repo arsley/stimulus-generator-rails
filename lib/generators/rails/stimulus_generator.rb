@@ -1,4 +1,5 @@
 require 'rails/generators/named_base'
+require 'active_support/inflector'
 
 class Rails::Generators::StimulusGenerator < Rails::Generators::NamedBase
   source_root File.expand_path('templates', __dir__)
@@ -17,7 +18,7 @@ class Rails::Generators::StimulusGenerator < Rails::Generators::NamedBase
   end
 
   def copy_stylesheet_file
-    template('controller.scss', stylesheet_path + "#{file_name}.scss")
+    template('controller.scss', stylesheet_path + "#{file_name.pluralize}.scss")
   end
 
   private
@@ -27,7 +28,7 @@ class Rails::Generators::StimulusGenerator < Rails::Generators::NamedBase
   end
 
   def controller_path
-    source_path + "javascripts/controllers/#{file_name}"
+    source_path + "javascripts/controllers/#{file_name.pluralize}"
   end
 
   def stylesheet_path

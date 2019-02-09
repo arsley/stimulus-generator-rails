@@ -8,6 +8,7 @@ Gem::Specification.new do |s|
   s.homepage = 'https://github.com/arsley/stimulus-generator-rails'
   s.license  = 'MIT'
 
+  s.add_dependency 'activesupport'
   s.add_dependency 'webpacker'
 
   s.files    = Dir['lib/**/*.rb']

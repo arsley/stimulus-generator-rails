@@ -14,7 +14,7 @@ class StimulusGeneratorTest < Rails::Generators::TestCase
     run_generator
 
     %w(index edit show).each do |action|
-      assert_file "app/webpacker/javascripts/controller/books/#{action}_controller.js"
+      assert_file "app/webpacker/javascripts/controllers/books/#{action}_controller.js"
     end
 
     assert_file "app/webpacker/stylesheets/books.scss"
