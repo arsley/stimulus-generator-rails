@@ -4,6 +4,12 @@ This is generator for Stimulus on Rails application with Webpacker.
 
 ## Installation
 
+Add to your Gemfile:
+
+```ruby
+gem 'stimulus-generator-rails'
+```
+
 Add this code to your webpacker's entrypoint javascript file:
 
 ```javascript
