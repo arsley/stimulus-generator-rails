@@ -21,6 +21,15 @@ const context = require.context("../javascripts/controllers", true, /\.js$/)
 application.load(definitionsFromContext(context))
 ```
 
+## Usage
+
+```shell
+$ rails g stimulus CONTROLLER_NAME [action action]
+
+# e.g.
+$ rails g stimulus books index edit
+```
+
 ### Attention
 
 This generator will create javascript and stylesheet into webpacker's `source_entry_path/../javascripts/controllers` and `source_entry_path/../stylesheets`.
